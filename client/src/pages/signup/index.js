@@ -16,6 +16,7 @@ function Signup(){
 
     async function onFormSubmit(event){
         event.preventDefault();
+        console.log(user)
         let response = null;
         try{
             dispatch(showLoader());

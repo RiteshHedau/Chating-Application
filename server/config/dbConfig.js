@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 //Connection logic
 mongoose.connect(process.env.CONN_STRING);
@@ -7,13 +7,12 @@ mongoose.connect(process.env.CONN_STRING);
 const db = mongoose.connection;
 
 //Check DB Connection
-db.on('connected', () => {
-    console.log('DB Connection Successful!')
-})
+db.on("connected", () => {
+  console.log("DB Connection Successful!");
+});
 
-db.on('err', () => {
-    console.log('DB Connection failed!');
-})
+db.on("err", () => {
+  console.log("DB Connection failed!");
+});
 
 module.exports = db;
-
