@@ -28,7 +28,7 @@ function ProtectedRoute({children}){
             }
         }catch(error){
             dispatch(hideLoader())
-            navigate('/login');
+            //navigate('/login');
         }
     }
 
@@ -47,7 +47,7 @@ function ProtectedRoute({children}){
             }
         }catch(error){
             dispatch(hideLoader())
-            navigate('/login');
+            //navigate('/login');
         }
     }
 
@@ -58,7 +58,7 @@ function ProtectedRoute({children}){
                 dispatch(setAllChats(response.data))
             }
         }catch(error){
-            navigate('/login');
+            //navigate('/login');
         }
     }
 
