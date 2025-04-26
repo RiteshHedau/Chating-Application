@@ -24,7 +24,7 @@ function ProtectedRoute({children}){
                 dispatch(setUser(response.data));
             }else{
                 toast.error(response.message);
-                window.location.href = '/login';
+                //window.location.href = '/login';
             }
         }catch(error){
             dispatch(hideLoader())
@@ -43,7 +43,7 @@ function ProtectedRoute({children}){
                 dispatch(setAllUsers(response.data));
             }else{
                 toast.error(response.message);
-                window.location.href = '/login';
+               // window.location.href = '/login';
             }
         }catch(error){
             dispatch(hideLoader())
